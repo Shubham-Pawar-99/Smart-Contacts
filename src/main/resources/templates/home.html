@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#same},~{::title})}" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    
+</head>
+
+<body>
+    <div id="same" class=" w-1/2 mx-auto mt-4 p-4 flex flex-col justify-center items-center space-y-3">
+        <h1 class="text-2xl font-bold " data-th-text="${name}"></h1>
+        <h2 class="text-xl text-gray-700">Age : <span data-th-text="${age}"></span></h2>
+        <h2>Place : <span data-th-text="${place}"></span></h2>
+        <h2 class="text-blue-700">Education : <span data-th-text="${education}"></span></h2>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea velit qui, expedita
+            doloremque maiores nobis aut, libero voluptas inventore, pariatur eveniet corporis iste nihil nam illo ullam
+            minima rem? Ullam tempore quisquam praesentium ipsum nostrum non similique. Natus, voluptatem provident
+            accusantium praesentium vitae aspernatur perspiciatis labore debitis deleniti numquam?</p>
+        <div>
+            <button class="btn rounded px-2 py-2 bg-blue-700 text-white hover:bg-blue-600">Click Here!</button>
+        </div>
+        
+    </div>
+
+<script>
+    console.log("Signup Clicked!");
+</script>
+   
+</body>
+
+</html>
